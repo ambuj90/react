@@ -1,0 +1,17 @@
+React JS Challenge #2: Display Current Date and Time in JSX in React JS
+
+
+import React from 'react';
+import ReactDOM from 'react-dom';
+
+const name = "ambuj sharma";
+const currDate = new Date().toLocaleDateString();
+const currTime = new Date().toLocaleTimeString();
+ReactDOM.render(
+    <>
+   <h1>my name is {name}</h1>
+   <p>today date = {currDate} </p>
+   <p> Current time is = {currTime}</p>
+</>,
+document.getElementById("root")
+);
