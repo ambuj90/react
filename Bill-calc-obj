@@ -1,0 +1,29 @@
+const obj1 = {
+    fullName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+
+    calcBMI1: function () {
+        const BMI1 = this.mass / this.height ** 2;
+        return BMI1;
+    }
+};
+
+const obj2 = {
+    fullName: 'John Smith',
+    mass: 92,
+    height: 1.95,
+    calcBMI2: function () {
+        const BMI2 = this.mass / this.height ** 2;
+        return BMI2;
+    }
+};
+console.log(obj1.calcBMI1());
+console.log(obj1.calcBMI1());
+console.log(obj2.calcBMI2());
+
+if (obj1.calcBMI1() > obj2.calcBMI2()) {
+    console.log(`${obj1.fullName} BMI is higher than ${obj2.fullName} !`)
+} else {
+    console.log(`${obj2.fullName} BMI is higher than ${obj1.fullName} !`)
+}
