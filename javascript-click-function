@@ -1,0 +1,6 @@
+<script>
+jQuery('.image-port').click(function() {
+let location = jQuery(this).find('a').attr('href');
+window.location = location;
+});
+</script>
