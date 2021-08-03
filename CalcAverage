@@ -1,0 +1,17 @@
+const calcAverage = () => {
+    const AvgDolphinsScore1 = (85 + 54 + 41) / 3;
+    const AvgKoalaScore2 = (23 + 34 + 27) / 3;
+    return `${AvgDolphinsScore1} and ${AvgKoalaScore2}`;
+}
+console.log(calcAverage());
+
+const checkWinner = function (AvgDolphinsScore, AvgKoalaScore) {
+    if (AvgDolphinsScore >= 2 * AvgKoalaScore) {
+        console.log("Dolphin wins!")
+    } else if (AvgKoalaScore >= 2 * AvgDolphinsScore) {
+        console.log("Kolas wins!")
+    } else {
+        console.log("No team wins!")
+    }
+}
+checkWinner();
