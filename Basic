@@ -1,0 +1,45 @@
+const YearUntilRetire = (BirthYear, FirstName) => {
+    const age4 = 2037 - BirthYear;
+    const retire = 65 - BirthYear;
+    return `${age4} and ${FirstName}`;
+}
+console.log(YearUntilRetire(1991, "Ambuj"));
+
+const originalone = (JoinC, FirstName, people) => {
+    const company = 2021 - JoinC;
+    const Member = 50 - people;
+    return `${company} year and ${FirstName} and ${Member}`;
+}
+console.log(originalone(2017, "Ambuj", 20));
+
+
+
+const num = Number('23');
+console.log(num);
+
+// function declartaion
+
+const age1 = calcAge(1991);
+function calcAge(BirthYear) {
+    return 2037 - BirthYear;
+}                                            //hoiesting
+console.log(age1);
+
+// function expression
+const calcAge2 = function (BirthYear) {
+    return 2037 - BirthYear;
+}
+const age2 = calcAge2(1991);
+console.log(age2, age1);
+
+//find fruits
+function fruits(apples, oranges) {
+    console.log(apples, oranges);
+    const juice = `I have ${apples} apples and I have ${oranges} oranges`;
+    return juice;
+}
+const juicemix = fruits(5, 0);
+console.log(juicemix);
+
+const newJuice = fruits(10, 20);
+console.log(newJuice);
