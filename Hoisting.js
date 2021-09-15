@@ -27,3 +27,23 @@ const addExp = function (a, b) {
 const addArrow = () => {
     return a + b;
 }
+
+//Example
+
+if (!newProducts) {
+    deleteShoppingCart();
+}
+var newProducts = 10;
+
+function deleteShoppingCart() {
+    console.log("All products deleted!")
+}
+
+//example
+var x = 1;
+let y = 2;
+const z = 3;
+
+console.log(x === window.x);
+console.log(y === window.y);
+console.log(z === window.z);
