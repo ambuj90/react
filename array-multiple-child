@@ -1,0 +1,104 @@
+import Link from "next/link";
+import { useState } from "react";
+
+const Card = ({ friend, id, name, username, instagram }) => (
+    <div>
+        <ul>
+            <li>id: {id}</li>
+            <li>name: {name}</li>
+            <li>username: {username}</li>
+            <li>instagram: {instagram}</li>
+        </ul>
+    </div>
+);
+
+const CardList = ({ friends }) => (
+    <div>
+        {friends.map(friend => <Card key={friend.id} {...friend} />)}
+    </div>
+);
+
+
+export default function Test() {
+    const people = [
+        {
+            name1: "INSTAGRAM",
+            logo: "./assets/img/icon/Youtube-Subscribers-Icon.png"
+        },
+        {
+            name2: "YOUTUBE",
+            logo: "./assets/img/icon/Youtube-Subscribers-Icon.png"
+        },
+        {
+            name3: "FACEBOOK",
+            logo: "./assets/img/icon/Youtube-Subscribers-Icon.png"
+        },
+        {
+            name4: "TIKTOK",
+            logo: "./assets/img/icon/Youtube-Subscribers-Icon.png"
+        },
+    ];
+
+    // const person = {
+    //     name: "freelancing",
+    //     twitter: "freelancingcult",
+    //     bio: "Programming",
+    //     logo: "./assets/img/icon/Youtube-Subscribers-Icon.png"
+    // };
+
+    // let details = [];
+    // for (const property in person) {
+    //     details.push(
+    //         <p>
+    //             {property}: {person[property]}
+    //         </p>
+    //     );
+    // }
+
+    const friends = [
+        {
+            id: 1,
+            name: "John Smith",
+            username: "jsmith",
+            instagram: "N/A"
+        },
+        {
+            id: 2,
+            name: "Mary Jane",
+            username: "mjane",
+            instagram: "puppyLover"
+        },
+        {
+            id: 3,
+            name: "Harry Potter",
+            username: "hpotter",
+            instagram: "best_wizard"
+        }
+    ];
+
+
+
+    return (
+        <div className="App">
+            <div className="common-heading tagline-boxed-two title-line m-b-10 text-center">
+
+                <h2 className="title">
+                    All SERVICES {" "}
+                    <span>
+                        {" "}
+                        {/* <img src="assets/img/particle/title-line.png" alt="Line" /> */}
+                    </span>{" "}
+
+                </h2>
+
+
+            </div>
+
+
+            <CardList friends={friends} />
+
+        </div>
+
+
+    );
+}
