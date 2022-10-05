@@ -1,0 +1,67 @@
+import React, { useState } from 'react'
+
+export default function TextForm(props) {
+    const [text, setText] = useState("");
+
+    // text = "knksnkn";   //Wrong way to change the state
+    // setText("ajsbjad"); //Correct way to change the state
+
+    const handleUpClick = () => {
+        // console.log(" Button is clicked" + text);
+        let NewText = text.toUpperCase();
+        setText(NewText);
+    }
+    const handleLoClick = () => {
+        // console.log(" Button is clicked" + text);
+        let NewText = text.toLowerCase();
+        setText(NewText);
+    }
+    const handleCapClick = () => {
+        // console.log(" Button is clicked" + text);
+        let NewText = text.charAt();
+        setText(NewText);
+    }
+    const handleClearClick = () => {
+        // console.log(" Button is clicked" + text);
+        let NewText = "";
+        setText(NewText);
+    }
+
+    const handleOnChange = (event) => {
+        // console.log("onChange");
+        setText(event.target.value)
+    }
+
+
+    return (
+        <>
+            <div className='container'>
+                <div className="mb-3 p-t-30 ">
+                    <h1>{props.heading} </h1>
+                    <textarea className="form-control" value={text} onChange={handleOnChange} id="myBox" rows="8"></textarea>
+
+                    <button className="template-btn  justify-content-center m-t-20" onClick={handleUpClick}>
+                        Convert to Uppercase
+                    </button>
+                    <button className="template-btn  justify-content-center m-t-20 m-l-20" onClick={handleLoClick}>
+                        Convert to Lowercase
+                    </button>
+                    <button className="template-btn  justify-content-center m-t-20 m-l-20" onClick={handleCapClick}>
+                        Convert to Capitalcase
+                    </button>
+                    <button className="template-btn  justify-content-center m-t-20 m-l-20" onClick={handleClearClick}>
+                        Clear Text
+                    </button>
+                </div>
+            </div>
+
+            <div className="container">
+                <h1>Your Text Summery</h1>
+                <p> {text.split(" ").length} Words and {text.length} characters.</p>
+                <p>{0.008 * text.split(" ").length} Mintuts Read</p>
+            </div>
+
+
+        </>
+    )
+}
