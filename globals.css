@@ -1,0 +1,1540 @@
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+
+/* Document
+   ========================================================================== */
+
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+
+html {
+     line-height: 1.15; /* 1 */
+     -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+   ========================================================================== */
+
+/**
+ * Remove the margin in all browsers.
+ */
+
+body {
+     margin: 0;
+     overflow-y: hidden;
+}
+
+/**
+ * Render the `main` element consistently in IE.
+ */
+
+main {
+     display: block;
+}
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+
+h1 {
+     font-size: 2em;
+     margin: 0.67em 0;
+}
+
+/* Grouping content
+   ========================================================================== */
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+
+hr {
+     box-sizing: content-box; /* 1 */
+     height: 0; /* 1 */
+     overflow: visible; /* 2 */
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+pre {
+     font-family: monospace, monospace; /* 1 */
+     font-size: 1em; /* 2 */
+}
+
+/* Text-level semantics
+   ========================================================================== */
+
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+
+a {
+     background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+
+abbr[title] {
+     border-bottom: none; /* 1 */
+     text-decoration: underline; /* 2 */
+     text-decoration: underline dotted; /* 2 */
+}
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+
+b,
+strong {
+     font-weight: bolder;
+}
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+
+code,
+kbd,
+samp {
+     font-family: monospace, monospace; /* 1 */
+     font-size: 1em; /* 2 */
+}
+
+/**
+ * Add the correct font size in all browsers.
+ */
+
+small {
+     font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+
+sub,
+sup {
+     font-size: 75%;
+     line-height: 0;
+     position: relative;
+     vertical-align: baseline;
+}
+
+sub {
+     bottom: -0.25em;
+}
+
+sup {
+     top: -0.5em;
+}
+
+/* Embedded content
+   ========================================================================== */
+
+/**
+ * Remove the border on images inside links in IE 10.
+ */
+
+img {
+     border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+     font-family: inherit; /* 1 */
+     font-size: 100%; /* 1 */
+     line-height: 1.15; /* 1 */
+     margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+
+button,
+input {
+     /* 1 */
+     overflow: visible;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+
+button,
+select {
+     /* 1 */
+     text-transform: none;
+}
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+     -webkit-appearance: button;
+}
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+     border-style: none;
+     padding: 0;
+}
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+     outline: 1px dotted ButtonText;
+}
+
+/**
+ * Correct the padding in Firefox.
+ */
+
+fieldset {
+     padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+
+legend {
+     box-sizing: border-box; /* 1 */
+     color: inherit; /* 2 */
+     display: table; /* 1 */
+     max-width: 100%; /* 1 */
+     padding: 0; /* 3 */
+     white-space: normal; /* 1 */
+}
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+
+progress {
+     vertical-align: baseline;
+}
+
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+
+textarea {
+     overflow: auto;
+}
+
+/**
+ * 1. Add the correct box sizing in IE 10.
+ * 2. Remove the padding in IE 10.
+ */
+
+[type="checkbox"],
+[type="radio"] {
+     box-sizing: border-box; /* 1 */
+     padding: 0; /* 2 */
+}
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+     height: auto;
+}
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+
+[type="search"] {
+     -webkit-appearance: textfield; /* 1 */
+     outline-offset: -2px; /* 2 */
+}
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+
+[type="search"]::-webkit-search-decoration {
+     -webkit-appearance: none;
+}
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+
+::-webkit-file-upload-button {
+     -webkit-appearance: button; /* 1 */
+     font: inherit; /* 2 */
+}
+
+/* Interactive
+   ========================================================================== */
+
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+
+details {
+     display: block;
+}
+
+/*
+ * Add the correct display in all browsers.
+ */
+
+summary {
+     display: list-item;
+}
+
+/* Misc
+   ========================================================================== */
+
+/**
+ * Add the correct display in IE 10+.
+ */
+
+template {
+     display: none;
+}
+
+/**
+ * Add the correct display in IE 10.
+ */
+
+[hidden] {
+     display: none;
+}
+
+@font-face {
+     font-family: "Eracake";
+     src: url("/fonts/eracake/Eracake.ttf") format("truetype");
+}
+@font-face {
+     font-family: "Luckiest Guy";
+     src: url("/fonts/fonts/LuckiestGuy-Regular.ttf") format("truetype");
+}
+@font-face {
+     font-family: "Comic Sans MS";
+     src: url("/fonts/fonts/comic.ttf") format("truetype");
+}
+h1,
+h2 {
+     font-family: "Eracake", sans-serif; /* Example usage */
+}
+
+/* Custom Html */
+
+.banr-sec {
+     display: flex;
+}
+.main {
+     max-width: 1320px;
+     margin: 0 auto;
+}
+
+body {
+     background-image: url("/assets/bg.png");
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+}
+.left-heading h1,
+.right-heading h2 {
+     color: #000;
+     text-align: right;
+     font-family: Eracake;
+
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     text-align: left;
+}
+.mai-list {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+.center-img {
+     max-width: 39%;
+}
+
+.center-img img {
+     width: 100%;
+}
+.header {
+     margin-top: 2rem;
+}
+.section-country {
+     display: flex;
+     justify-content: space-between;
+     margin-top: -5rem;
+     column-gap: 60px;
+}
+
+.ip-country-box {
+     /* display: flex;
+justify-content: space-between; */
+     background: #fff;
+     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+     width: 50%;
+     padding: 1rem 4rem 0 1rem;
+     border-top-left-radius: 22px;
+     align-items: center;
+     border-top-right-radius: 22px;
+}
+.ip-country-box {
+     position: relative;
+}
+.popbox.hidden {
+     opacity: 0;
+     max-height: 0;
+     overflow: hidden;
+     transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+.popbox {
+     opacity: 1;
+     max-height: 1000px; /* Large enough to fit content */
+     transition: opacity 0.5s ease, max-height 0.5s ease;
+}
+.toggle-sign {
+     position: absolute;
+     top: 30px;
+     /* background: red; */
+     right: 18px;
+}
+.popbox {
+     display: flex;
+     justify-content: space-between;
+}
+
+.zazu-count {
+     display: flex;
+     justify-content: space-between;
+     background: #fff;
+     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+     width: 50%;
+     height: 60px;
+     padding: 1rem 2rem 0;
+     border-top-left-radius: 22px;
+     align-items: center;
+     border-top-right-radius: 22px;
+}
+.total-zazu-count {
+     display: flex;
+     align-items: center;
+}
+.total-zazu-count h3 {
+     color: #000;
+     font-family: Eracake;
+     font-size: 28.475px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     margin: 0;
+}
+.titl h2,
+.counting h3 {
+     color: #000;
+     font-family: Eracake;
+     font-size: 28.475px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     margin: 0;
+}
+span.point {
+     color: #000;
+     text-align: center;
+     font-family: Eracake;
+     font-size: 23.8px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+}
+span.numb {
+     color: #000;
+     text-align: center;
+     font-family: Eracake;
+     font-size: 23.8px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+}
+.serailno ul {
+     list-style-type: none;
+}
+.incrent-section {
+     display: flex;
+     gap: 20px;
+     align-items: center;
+}
+.listicles {
+     display: flex;
+     align-items: center;
+}
+.inln-flx {
+     display: flex;
+     gap: 20px;
+     align-items: center;
+}
+
+/* Leaderboar CSS */
+.leaderboard-container {
+     display: flex;
+     justify-content: center;
+     padding: 0px;
+     margin-top: 50px;
+     position: relative;
+}
+
+.leaderboard {
+     background-color: white;
+     width: 700px;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+     overflow: visible;
+     position: relative;
+}
+
+.leaderboard-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     background-color: #fff;
+     padding: 10px 20px;
+     font-weight: bold;
+     font-size: 1.2rem;
+     border-bottom: 2px solid #eaeaea;
+     position: fixed; /* Fixed header */
+     bottom: 0; /* Stays at the top */
+     left: 50%;
+     transform: translateX(-50%);
+     width: 660px;
+     z-index: 2;
+     font-family: "Eracake", sans-serif;
+}
+
+.leaderboard-list {
+     list-style-type: none;
+     max-height: 0px; /* Initially collapsed */
+     overflow: hidden;
+     padding: 0;
+     overflow-y: auto;
+     margin: 0;
+     display: flex;
+     flex-direction: column; /* Open upwards */
+     transition: max-height 0.3s ease, padding 0.3s ease;
+     position: absolute;
+     bottom: 100%; /* Expand upwards from header */
+     left: 0;
+     width: 100%;
+     z-index: 1;
+     border-radius: 10px 0 10px 0;
+     background-color: #f4f4f4;
+}
+.leaderboard-item-header {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 20px;
+     border-bottom: 1px solid #eaeaea;
+     background-color: white;
+}
+
+.leaderboard-item {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px 20px;
+     border-bottom: 1px solid #eaeaea;
+     background-color: white;
+}
+
+.leaderboard-item:last-child {
+     border-bottom: none;
+}
+
+.flag img {
+     width: 20px;
+     height: auto;
+     border-radius: 4px;
+}
+
+.flag-number {
+     margin: 0 15px;
+}
+
+.country {
+     flex-grow: 1;
+     margin-left: 10px;
+     font-weight: bold;
+     color: #000;
+     font-family: "Eracake", sans-serif;
+}
+
+.pps {
+     font-size: 0.9rem;
+     color: #000;
+     font-family: "Eracake", sans-serif;
+}
+
+/* Scrollbar styling */
+.leaderboard-list::-webkit-scrollbar {
+     width: 8px;
+}
+
+.leaderboard-list::-webkit-scrollbar-thumb {
+     background-color: #000;
+     /* border-radius: 10px; */
+}
+
+/* Right-side icon for expanding/collapsing */
+.toggle-icon {
+     cursor: pointer;
+     transition: transform 0.3s ease;
+}
+
+.rotate {
+     transform: rotate(180deg);
+}
+
+.counter-textOverlay {
+     text-align: center;
+     margin: 0;
+     font-size: 55px;
+}
+
+.center-img {
+     width: auto; /* Adjust size as needed */
+     height: auto;
+     /* z-index: -1; */
+}
+.number {
+     font-weight: bold;
+     font-size: 1.2rem;
+     font-family: "Eracake";
+     margin-right: 10px;
+}
+
+/* Add to your globals.css or in the component's style block */
+
+/* Styling for the social share component */
+.social-share {
+     position: fixed;
+     top: 50%;
+     right: 0px;
+     transform: translateY(-50%);
+     display: flex;
+     flex-direction: column;
+     gap: 5px;
+     z-index: 1000; /* Ensure it stays on top */
+}
+.social-share a {
+     background: #c2986e;
+     border: 0.5px solid #333;
+     border-top-left-radius: 6px;
+     border-bottom-left-radius: 6px;
+}
+
+.social-button {
+     padding: 5px;
+     color: #fff;
+     font-size: 14px;
+     text-decoration: none;
+     /* border-radius: 5px; */
+     text-align: center;
+     /* width: 120px; */
+     transition: background-color 0.3s;
+}
+
+.social-button img {
+     width: 32px;
+     height: 32px;
+     transition: transform 0.2s;
+}
+
+.social-button:hover img {
+     transform: scale(1.1);
+}
+
+/* Specific background colors for each platform */
+.twitter {
+     background-color: #1da1f2;
+}
+
+.facebook {
+     background-color: #3b5998;
+}
+
+.whatsapp {
+     background-color: #25d366;
+}
+
+.telegram {
+     background-color: #0088cc;
+}
+
+.tiktok {
+     background-color: #000000;
+}
+
+.instagram {
+     background: radial-gradient(
+          circle at 30% 30%,
+          #fdf497,
+          #fdf497,
+          #fd5949,
+          #d6249f,
+          #285aeb
+     );
+}
+
+.social-button:hover {
+     opacity: 0.8;
+}
+
+header .btn a {
+     padding: 0;
+ }
+
+.showBtnAnimation{
+     position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
+}
+
+@media (max-width: 768px) {
+     .leaderboard-header {
+          width: 100%;
+     }
+     .copynumb button {
+          padding: 0.4rem 2rem !important;
+     }
+     .topIcon {
+          width: 40px !important;
+          height: 40px !important;
+     }
+}
+/* END Leaderboar CSS */
+
+@media (max-width: 767px) {
+     .left-heading h1,
+     .right-heading h2 {
+          font-size: 2rem;
+          text-align: center;
+     }
+     .mai-list {
+          flex-direction: column;
+     }
+     .main {
+          padding: 0 1rem;
+     }
+     .header {
+          margin-top: 1rem;
+     }
+     .center-img {
+          max-width: 100%;
+     }
+     .left-heading {
+          order: 1;
+          width: 100%;
+          text-align: center;
+     }
+     .center-img {
+          order: 3;
+     }
+     .right-heading {
+          order: 2;
+          width: 100%;
+     }
+     .right-heading h2 {
+          margin: 0;
+     }
+     .left-heading h1 {
+          margin-top: 0;
+          margin-bottom: 10px;
+     }
+     .main-logo img {
+          width: 35px;
+          height: 35px;
+          object-fit: contain;
+     }
+
+     .pps img {
+          width: 20px;
+          height: 20px;
+          object-fit: contain;
+     }
+     .header {
+          margin-top: 10px;
+          margin-bottom: 1rem;
+      }
+     .header  .copynumb button {
+          box-shadow: 2px 2px 0 0 #000;
+          height: 38px;
+     }
+}
+@media (max-width: 767px) {
+     span.country {
+          font-size: 12px;
+     }
+     li.leaderboard-item-header span.number {
+          display: flex;
+          gap: 10px;
+          align-items: center;
+     }
+     li.leaderboard-item-header h2 {
+          font-size: 16px;
+     }
+     span#toggleIconClose {
+          right: 30px;
+          position: absolute;
+          top: 20px;
+     }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+     .left-heading h1,
+     .right-heading h2 {
+          text-align: center;
+     }
+     .left-heading {
+          order: 1;
+          width: 100%;
+          text-align: center;
+     }
+     .center-img {
+          order: 3;
+     }
+     .right-heading {
+          order: 2;
+          width: 100%;
+     }
+     .right-heading h2 {
+          margin: 0;
+     }
+     .left-heading h1 {
+          margin-bottom: 10px;
+     }
+}
+
+@media (min-width: 768px) and (max-width: 1279px) {
+     .mai-list {
+          flex-direction: column;
+     }
+     .center-img {
+          max-width: 100%;
+     }
+}
+
+@media (min-width: 768px) {
+     .left-heading h1,
+     .right-heading h2 {
+          font-size: 71.113px;
+     }
+}
+
+@media (min-width: 1280px) {
+     .right-heading {
+          transform: translateY(40px);
+     }
+
+     .left-heading h1 {
+          /* transform: translateY(-50px); */
+          transform: translateX(100px);
+     }
+
+     .left-heading {
+          transform: translateY(-100px);
+     }
+}
+.zazu-ca {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.btn a {
+     color: #000;
+     font-family: Eracake;
+     font-size: 25.971px;
+     font-style: normal;
+     font-weight: 400;
+     line-height: normal;
+     text-decoration: none;
+     display: inline-block;
+     justify-content: center;
+     align-items: center;
+}
+.btn a {
+     background-image: url(/assets/images/Button.png);
+     background-repeat: no-repeat;
+     background-position: 50%;
+     background-size: cover;
+     padding: 18px;
+}
+
+.copynumb button {
+     padding: 1rem 2rem;
+     border-radius: 22px;
+     margin-right: 10px;
+     border: none;
+     background: #f2e3d3;
+     color: #b86510;
+     font-family: Luckiest Guy;
+     font-size: 18.971px;
+     box-shadow: 5px 5px 0 0 #000;
+}
+.btn {
+     display: flex;
+     align-items: center;
+     justify-content: flex-start;
+}
+.copynumb {
+     display: inline-flex;
+     align-items: center;
+     transition: transform 0.5s;
+}
+.btnCa{
+     cursor: pointer;
+}
+.btn-click-effect{
+     transform: scale(0.80);
+}
+
+
+/* Laser gmae */
+        
+   /* body, html {
+     margin: 0;
+     padding: 0;
+     height: 100%;
+     overflow: hidden;
+     font-family: 'Press Start 2P', cursive;
+     background-image: url("https://minauteur.github.io/microwavemansion.com/lasercat/spacelarge.jpg");
+     background-repeat: repeat;
+     min-width: 542px;
+   }
+   
+   .backgroundimg {
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     background-repeat: repeat;
+   }
+   
+   #back1 {
+     background: url("https://minauteur.github.io/microwavemansion.com/lasercat/spacelarge.jpg") repeat center scroll;
+     z-index: 0;
+   }
+   
+   #back2 {
+     background: url("https://minauteur.github.io/microwavemansion.com/lasercat/outer-space-stars.jpeg") repeat center scroll;
+     z-index: -1;
+   }
+   
+   #back3 {
+     background: url("https://minauteur.github.io/microwavemansion.com/lasercat/spacetile.jpg") repeat center scroll;
+     z-index: -2;
+   }
+   
+   #back4 {
+     background: url("https://minauteur.github.io/microwavemansion.com/lasercat/stars.gif") repeat center scroll;
+     z-index: -3;
+   }
+   
+   @keyframes backgroundchangeFadeInOut {
+     0% {
+       opacity: 0;
+     }
+     50% {
+       opacity: 1;
+     }
+     100% {
+       opacity: 0;
+       transform: scale(6);
+     }
+   }
+   
+   #backgroundchange div {
+     animation-name: backgroundchangeFadeInOut;
+     animation-timing-function: linear;
+     animation-iteration-count: infinite;
+     animation-duration: 24s;
+   }
+   
+   #blinker {
+     position: fixed;
+     top: 10px;
+     width: 100%;
+     text-align: center;
+     color: #fff;
+     font-size: 40px;
+     line-height: 40px;
+     letter-spacing: 5px;
+     text-shadow: -2px 0 0 #fdff2a, -4px 0 0 #df4a42, 2px 0 0 #91fcfe, 4px 0 0 #4405fc;
+     animation: blink 1s steps(4, start) infinite;
+     z-index: 999;
+   }
+   
+   @keyframes blink {
+     to {
+       visibility: hidden;
+     }
+   }
+   
+   #canvas {
+     display: block;
+     position: fixed;
+     background-image: none !important;
+   }
+   
+
+                 */
+/*Walking cat code */
+
+
+   
+
+   
+#marco{
+     width: 1325px;
+     height: 500px;
+     margin: 0 auto;
+     overflow: hidden;
+     border-radius: 16px;
+     margin-top: 2em;
+     }
+ 
+ #cielo{
+     border-radius: 16px;
+     width: 1325px;
+     height: 500px;
+     background: linear-gradient(to bottom,  #0B4C5F 0%,#04B4AE 52%,#0c0207 100%); 
+     position: absolute;
+     z-index: -30;
+     top: 0;
+     margin-top: 2em;
+     }
+ 
+ #edificios{
+     background: url('https://res.cloudinary.com/pastelitos/image/upload/v1610526533/eva/edificiosOne_fsg7nx.svg');
+     height: 500px; 
+     width: 1325px;
+     z-index: -10;
+     top: 6.5em;
+     background-position: 0px 0px;
+     background-repeat: repeat-x;
+     -webkit-animation: animar_edificios 120s linear infinite;
+     -ms-animation: animar_edificios 120s linear infinite;
+     -moz-animation: animar_edificios 120s linear infinite;
+     position: absolute;
+     }
+ 
+ /* Animacion edificios */
+ 
+    @keyframes  animar_edificios {
+         from { background-position: 0 0; }
+         to { background-position: 100% 0; }
+     }
+     @-webkit-keyframes  animar_edificios {
+         from { background-position: 0 0; }
+         to { background-position: 100% 0; }
+     }
+     @-ms-keyframes  animar_edificios {
+         from { background-position: 0 0; }
+         to { background-position: 100% 0; }
+     }
+     @-moz-keyframes  animar_edificios {
+         from { background-position: 0 0; }
+         to { background-position: 100% 0; }
+     }
+    
+ #luna {
+     width: 6em;
+     height: 6em;
+     -moz-border-radius: 50%;
+     -webkit-border-radius: 50%;
+     border-radius: 50%;
+     -moz-box-shadow: 30px 10px 0 #F7F8E0;
+     -webkit-box-shadow: 30px 10px 0 #F7F8E0;
+     box-shadow: 30px 10px 0 #F7F8E0;
+     margin-top: 1em;
+     margin-left: 50%;
+     position: absolute;
+     z-index: -19;
+     }
+ 
+ #muro{
+     height: 23em;
+     width: 100%;
+     background: -moz-linear-gradient(top,  #416663 0%, #0c0207 19%); 
+     background: -webkit-linear-gradient(top,  #416663 0%,#0c0207 19%); 
+     background: linear-gradient(to bottom,  #416663 0%,#0c0207 19%); 
+     bottom:0px; 
+     }
+ 
+ #gato{
+     background: url('https://res.cloudinary.com/pastelitos/image/upload/v1610526571/eva/gatito_pushui.svg');
+     height: 297px; 
+     width: 507.5px;
+     margin-top: 2em;
+     margin-left: 2em;
+     z-index: 10;
+     -webkit-animation: sprite-animation 1.2s steps(16,end) infinite;
+     -moz-animation: sprite-animation 1.2s steps(16,end) infinite; 
+     -ms-animation: sprite-animation 1.2s steps(16,end) infinite; 
+     animation: sprite-animation 1.2s steps(16,end) infinite;
+     }
+ 
+ @-webkit-keyframes sprite-animation { 
+         from { background-position: 0 0; }
+         to { background-position: -8120px 0; } 
+     }
+ 
+ @-ms-keyframes sprite-animation { 
+         from { background-position: 0 0; }
+         to { background-position: -8120px 0; }
+     }
+ 
+ @-moz-keyframes sprite-animation { 
+         from { background-position: 0 0; }
+         to { background-position: -8120px 0; }
+     }
+ 
+ @keyframes sprite-animation { 
+         from { background-position: 0 0; }
+         to { background-position: -8120px 0; }
+     }
+
+
+     html {
+  overflow: hidden;
+  touch-action: none;
+  content-zooming: none;
+}
+body {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+#game {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+}
+#game .body {
+  stroke-width: 5;
+  stroke: #000000;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: 3;
+}
+#game .head {
+  fill: #000000;
+}
+#game .cell {
+  cursor: pointer;
+}
+#bar {
+  position: absolute;
+  bottom: 10vh;
+  left: 50%;
+  width: 100vmin;
+  color: #000;
+  font-size: 6vmin;
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  user-select: none;
+  -webkit-user-select: none;
+  margin-left: -50vmin;
+}
+#reset {
+  position: absolute;
+  left: 10px;
+}
+#title {
+  position: absolute;
+  right: 10px;
+  cursor: default;
+}
+
+/*CatTRapGame */
+
+
+   #game {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+     background: #fff;
+   }
+   #game .body {
+     stroke-width: 5;
+     stroke: #000000;
+     stroke-linecap: round;
+     stroke-linejoin: round;
+     stroke-miterlimit: 3;
+   }
+   #game .head {
+     fill: #000000;
+   }
+   #game .cell {
+     cursor: pointer;
+   }
+   #bar {
+     position: absolute;
+     bottom: 10vh;
+     left: 50%;
+     width: 100vmin;
+     color: #000;
+     font-size: 6vmin;
+     font-weight: bold;
+     cursor: pointer;
+     font-family: 'Nunito', sans-serif;
+     user-select: none;
+     -webkit-user-select: none;
+     margin-left: -50vmin;
+   }
+   #reset {
+     position: absolute;
+     left: 10px;
+   }
+   #title {
+     position: absolute;
+     right: 10px;
+     cursor: default;
+   }
+
+   
+   /*tailChase css */
+
+   /* TailChase.module.css */
+
+/* Container to center Zazu */
+.tailChaseZazu {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background-color: #f0f8ff; /* Soft background color for focus */
+     overflow: hidden;
+     position: relative;
+   }
+   
+   /* Zazu (the character) */
+   .zazuTail {
+     width: 100px; /* Adjust size of Zazu */
+     height: 100px;
+     background: url('https://res.cloudinary.com/pastelitos/image/upload/v1610526571/eva/gatito_pushui.svg') no-repeat;
+     background-size: cover;
+     animation: tailChase 1.5s linear infinite; /* Looping spin animation */
+     border-radius: 50%; /* Circle effect if needed */
+   }
+   
+   /* Keyframes for spinning Zazu */
+   @keyframes tailChase {
+     0% {
+       transform: rotate(0deg);
+     }
+     25% {
+       transform: rotate(90deg);
+     }
+     50% {
+       transform: rotate(180deg);
+     }
+     75% {
+       transform: rotate(270deg);
+     }
+     100% {
+       transform: rotate(360deg);
+     }
+   }
+   
+
+   /* tailChaseZAZUcss */
+
+   /* Tail Chase Animation Styles */
+.tail-chase-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background-color: #f7f7f7;
+     overflow: hidden;
+     position: relative;
+   }
+   
+   .zazu-cat {
+     position: relative;
+     width: 100px;
+     height: 100px;
+     animation: spin 2s infinite linear;
+   }
+   
+   .cat-body {
+     width: 80px;
+     height: 50px;
+     background-color: #ffcc00;
+     border-radius: 40px;
+     position: absolute;
+     bottom: 0;
+     left: 10px;
+     z-index: 1;
+   }
+   
+   .cat-head {
+     width: 50px;
+     height: 50px;
+     background-color: #ffcc00;
+     border-radius: 50%;
+     position: absolute;
+     top: -25px;
+     left: 25px;
+   }
+   
+   .cat-tail {
+     width: 10px;
+     height: 30px;
+     background-color: #ffcc00;
+     border-radius: 5px;
+     position: absolute;
+     top: 50%;
+     left: -15px;
+     transform-origin: top;
+     animation: wag 0.3s infinite alternate;
+   }
+   
+   /* Animations */
+   @keyframes spin {
+     0% {
+       transform: rotate(0deg);
+     }
+     100% {
+       transform: rotate(360deg);
+     }
+   }
+   
+   @keyframes wag {
+     0% {
+       transform: rotate(20deg);
+     }
+     100% {
+       transform: rotate(-20deg);
+     }
+   }
+   
+
+   /*moveZAZu game */
+
+   /* General Styles */
+
+   
+   /* Tail Chase Animation */
+   .tail-chase-container {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     background-color: #fff;
+   }
+   
+   .zazu-cat {
+     position: relative;
+     width: 100px;
+     height: 100px;
+     animation: spin 2s linear infinite;
+   }
+   
+   .cat-body {
+     background-color: #ffcc00;
+     width: 60px;
+     height: 60px;
+     border-radius: 50%;
+     position: absolute;
+     top: 20px;
+     left: 20px;
+   }
+   
+   .cat-head {
+     background-color: #444;
+     width: 40px;
+     height: 40px;
+     border-radius: 50%;
+     position: absolute;
+     top: -10px;
+     left: 30px;
+   }
+   
+   .cat-tail {
+     background-color: #ffcc00;
+     width: 20px;
+     height: 80px;
+     border-radius: 10px;
+     position: absolute;
+     top: 50px;
+     left: 10px;
+     transform-origin: top center;
+     animation: tail-spin 1s ease-in-out infinite;
+   }
+   
+   /* Animations */
+   @keyframes spin {
+     0% {
+       transform: rotate(0deg);
+     }
+     100% {
+       transform: rotate(360deg);
+     }
+   }
+   
+   @keyframes tail-spin {
+     0%, 100% {
+       transform: rotate(-20deg);
+     }
+     50% {
+       transform: rotate(20deg);
+     }
+   }
+   
+
+   /* Fortune Cookie css code */
+
+
+   button {
+     cursor: pointer;
+     background: none;
+     border: none;
+     padding: 0;
+   }
+   
+   /* Cookie Layout */
+   .fc {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     margin: 5em auto;
+     width: 15em;
+     height: 15em;
+   }
+   
+   /* Left Cookie Part */
+   .left {
+     position: absolute;
+     background-image: url('/assets/leftCookie.png'); /* Update path */
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     width: 11em;
+     height: 15em;
+     transform: rotate(0deg);
+     clip-path: polygon(0% 0%, 100% 0%, 100% 30%, 100% 100%, 0% 100%);
+     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+     transition: all 0.5s ease-out;
+     margin-right: 145px;
+   }
+   
+   /* Right Cookie Part */
+   .right {
+     position: absolute;
+     background-image: url('/assets/rightCookie.png'); /* Update path */
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+     width: 8em;
+     height: 15em;
+     transform: rotate(0deg);
+     clip-path: polygon(0% 0%, 0% 0%, 100% 0%, 100% 100%, 0% 100%);
+     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+     transition: all 0.5s ease-out;
+     margin-left: 86px;
+   }
+   
+   /* Fortune Message */
+   .fc-fortune {
+     position: absolute;
+     bottom: -1em;
+     background: #ffffff;
+     color: #333;
+     font-family: 'Arial', sans-serif;
+     font-size: 0.9em;
+     padding: 1em;
+     border-radius: 10px;
+     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+     transform: scale(0);
+     transform-origin: center;
+     opacity: 0;
+     text-align: center;
+     transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+   }
+   
+   /* Opened State */
+   .opened .fc-fortune {
+     transform: scale(1);
+     opacity: 1;
+   }
+   
+   /* Animations for Cookie Disappearance */
+   .opened .left {
+     transform: translateX(-8em) rotate(30deg);
+     opacity: 0;
+   }
+   
+   .opened .right {
+     transform: translateX(8em) rotate(-30deg);
+     opacity: 0;
+   }
+   
